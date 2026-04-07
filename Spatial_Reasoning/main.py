@@ -1,6 +1,3 @@
-Here is the complete code with all Chinese comments, log messages, and output strings translated into English.
-
-```python
 import json
 import torch
 import airsim
@@ -44,12 +41,12 @@ def CityNavAgent(scene_id, split, data_dir="/home/zhouhuan/project/CityNavAgent/
 
     with open(data_root, 'r') as f:
         navi_tasks = json.load(f)['episodes']
-    nav_evaluator = CityNavEvaluator()
+    #nav_evaluator = CityNavEvaluator()
 
     llm = OpenAI_LLM_v2(
         max_tokens=20000,
-        model_name="qwen3-vl-plus",
-        api_key="sk-992a949cd9a84baeaf73da6daf0a7b4c",
+        model_name="********",
+        api_key="***************",
         client_type="openai",
         cache_name="navigation",
         finish_reasons=["stop", "length"],
@@ -70,7 +67,7 @@ def CityNavAgent(scene_id, split, data_dir="/home/zhouhuan/project/CityNavAgent/
         min_valid_depth=1.2)
 
     nav_orchestrator = NavigationOrchestrator(
-        llm_client=llm_t,
+        llm_client=llm,
         spatial_enhancer=spatial_reasoner)
 
     occupancy_config = OccupancyMapConfig(
