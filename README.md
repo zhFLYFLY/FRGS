@@ -1,9 +1,5 @@
 # FRGS: Long-Horizon UAV Vision-and-Language Navigation with Focused Reasoning Guided by State
 
-<p align="center">
-  <img src="assets/pipeline.png" width="95%">
-</p>
-
 ## 📋 Table of Contents
 - [News](#-news)
 - [Introduction](#-introduction)
@@ -24,6 +20,11 @@
 ## 📖 Introduction
 
 Zero-shot UAV vision-and-language navigation (VLN) methods struggle with long-horizon scenarios due to inaccurate tracking of instruction execution stages and interference from redundant historical context, resulting in unfocused reasoning and unstable navigation decisions.
+
+<p align="center">
+  <img src="assets/pipeline.png" width="95%">
+  <br><em>Figure 1: Overview of the FRGS framework. The system reformulates navigation into stage-wise focused reasoning via Instruction State Management (ISM) and Historical Context Dynamic Focusing (HCDF).</em>
+</p>
 
 We propose **FRGS**, which reformulates navigation from open-ended reasoning over the full context into a **stage-wise focused reasoning** process centered on the current instruction state. FRGS jointly leverages:
 
