@@ -20,12 +20,6 @@
 ## 📖 Introduction
 
 Zero-shot UAV vision-and-language navigation (VLN) methods struggle with long-horizon scenarios due to inaccurate tracking of instruction execution stages and interference from redundant historical context, resulting in unfocused reasoning and unstable navigation decisions.
-
-<p align="center">
-  <img src="fig1.png" width="95%">
-  <br><em>Figure 1: Overview of the FRGS framework. The system reformulates navigation into stage-wise focused reasoning via Instruction State Management (ISM) and Historical Context Dynamic Focusing (HCDF).</em>
-</p>
-
 We propose **FRGS**, which reformulates navigation from open-ended reasoning over the full context into a **stage-wise focused reasoning** process centered on the current instruction state. FRGS jointly leverages:
 
 - **Instruction State Management (ISM):** Decomposes complex instructions into sub-tasks with verifiable constraints and manages sub-instruction states based on constraint satisfaction.
