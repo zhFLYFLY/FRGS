@@ -13,7 +13,7 @@
 
 ## 🔥 News
 
-- **[2026.04]** Partial code released. Full code (ISM & HCDF modules) will be released upon paper acceptance.
+- **[2026.04]** Partial code released. 
 
 ---
 
